@@ -1,0 +1,582 @@
+{
+  "General": [
+    {
+      "Id": "NotifyLevel",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 0,
+      "MaxIntVal": 3,
+      "IntVal": 2
+    },
+    {
+      "Id": "CollapseNotifications",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyActorConverted",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "NotifyNovelties",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyWars",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "NotifyIdeologyPowers",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyIdeologyThreats",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "NotifyEconomyCrises",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "NotifyIdeologyPowerEnd",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "EnableSmartDiplomacy",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableUnions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableChronicle",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowStrategyUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowDiplomacyUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowUnionUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowKingdomChronicleUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "IdeologyAffectsLoyalty",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "IdeologyAffectsMood",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ChronicleSummaryYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 5,
+      "IntVal": 1
+    },
+    {
+      "Id": "RevolutionChance",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.05,
+      "MaxFloatVal": 0.9,
+      "FloatVal": 0.35
+    },
+    {
+      "Id": "RevolutionYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 10,
+      "IntVal": 3
+    },
+    {
+      "Id": "IdeologySpread",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.01,
+      "MaxFloatVal": 0.5,
+      "FloatVal": 0.1
+    },
+    {
+      "Id": "ForeignInfluence",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 0.3,
+      "FloatVal": 0.045
+    },
+    {
+      "Id": "DissentRate",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 1.0,
+      "FloatVal": 0.2
+    },
+    {
+      "Id": "EnableCivilWars",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableSecessions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowCivilWarUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "CivilWarChance",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.02,
+      "MaxFloatVal": 0.4,
+      "FloatVal": 0.05
+    },
+    {
+      "Id": "CivilWarYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 2,
+      "MaxIntVal": 12,
+      "IntVal": 5
+    },
+    {
+      "Id": "EnableEconomy",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableTrade",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyTrade",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyEras",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyExtinctions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "NotifyRoyalSecessions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ShowEconomyUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "TradeProfit",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.1,
+      "MaxFloatVal": 1.0,
+      "FloatVal": 0.35
+    },
+    {
+      "Id": "TradeRoutes",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 10,
+      "IntVal": 6
+    },
+    {
+      "Id": "RecessionChance",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.01,
+      "MaxFloatVal": 0.15,
+      "FloatVal": 0.035
+    },
+    {
+      "Id": "EnableDynasties",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "MarriageChance",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.2,
+      "MaxFloatVal": 0.9,
+      "FloatVal": 0.6
+    },
+    {
+      "Id": "MarriageMinAge",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 14,
+      "MaxIntVal": 20,
+      "IntVal": 16
+    },
+    {
+      "Id": "ShowDynastyUI",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableTreaties",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "TreatyYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 10,
+      "MaxIntVal": 40,
+      "IntVal": 20
+    },
+    {
+      "Id": "EnableCasusBelli",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableEspionage",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableCoalitions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "VassalTributeRate",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 0.25,
+      "FloatVal": 0.1
+    },
+    {
+      "Id": "VassalRebellionApproval",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.1,
+      "MaxFloatVal": 0.6,
+      "FloatVal": 0.3
+    },
+    {
+      "Id": "TrackAlliances",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "UnionInheritanceChance",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 1.0,
+      "FloatVal": 0.5
+    },
+    {
+      "Id": "InstitutionPointsPerMember",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 2.0,
+      "FloatVal": 0.5
+    },
+    {
+      "Id": "InstitutionBaseCost",
+      "Type": "SLIDER",
+      "MinFloatVal": 1.0,
+      "MaxFloatVal": 10.0,
+      "FloatVal": 3.0
+    },
+    {
+      "Id": "EnableIntegration",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "IntegrationSpeed",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.05,
+      "MaxFloatVal": 0.5,
+      "FloatVal": 0.1
+    },
+    {
+      "Id": "IntegrationApprovalDrain",
+      "Type": "SLIDER",
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 0.1,
+      "FloatVal": 0.02
+    },
+    {
+      "Id": "EnableFullUnionReform",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableWarPeace",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "TruceYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 3,
+      "MaxIntVal": 25,
+      "IntVal": 10
+    },
+    {
+      "Id": "MaxCededCities",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 6,
+      "IntVal": 3
+    },
+    {
+      "Id": "ReparationsYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 2,
+      "MaxIntVal": 15,
+      "IntVal": 8
+    },
+    {
+      "Id": "EnableRestoration",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableRealRegency",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableBorders",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "BordersClosedByDefault",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "BorderOpeningTalksYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 40,
+      "IntVal": 8
+    },
+    {
+      "Id": "BorderLockYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 10,
+      "MaxIntVal": 200,
+      "IntVal": 50
+    },
+    {
+      "Id": "EnablePowerRaids",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableDynastySurnames",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "BorderIntruderDamage",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 0,
+      "MaxIntVal": 25,
+      "IntVal": 5
+    },
+    {
+      "Id": "EnableEraRestrictions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EraMedievalYear",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 20,
+      "MaxIntVal": 200,
+      "IntVal": 60
+    },
+    {
+      "Id": "EraEarlyModernYear",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 60,
+      "MaxIntVal": 400,
+      "IntVal": 150
+    },
+    {
+      "Id": "EraModernYear",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 100,
+      "MaxIntVal": 1000,
+      "IntVal": 250
+    },
+    {
+      "Id": "EnableConstitution",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ReferendumCooldownYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 3,
+      "MaxIntVal": 40,
+      "IntVal": 10
+    },
+    {
+      "Id": "RulerAmendmentYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 5,
+      "MaxIntVal": 40,
+      "IntVal": 15
+    },
+    {
+      "Id": "ChronicleReadable",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ChronicleGroupExtinctions",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "ChronicleGroupBorders",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "KmudEnabled",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "KmudYear",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 50,
+      "MaxIntVal": 1000,
+      "IntVal": 200
+    },
+    {
+      "Id": "KmudYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 30,
+      "IntVal": 10
+    },
+    {
+      "Id": "KmudPauseYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 50,
+      "IntVal": 10
+    },
+    {
+      "Id": "KmudIntervalYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 200,
+      "IntVal": 100
+    },
+    {
+      "Id": "KmudPactYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 200,
+      "IntVal": 50
+    },
+    {
+      "Id": "PerfReport",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "VerboseAiLog",
+      "Type": "SWITCH",
+      "BoolVal": false
+    },
+    {
+      "Id": "CensusSampleLimit",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 40,
+      "MaxIntVal": 1200,
+      "IntVal": 240
+    },
+    {
+      "Id": "BlockNativeAlliances",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableSettlementExpansion",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "EnableMigration",
+      "Type": "SWITCH",
+      "BoolVal": true
+    },
+    {
+      "Id": "MigrationPerYear",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 0,
+      "MaxIntVal": 30,
+      "IntVal": 6
+    },
+    {
+      "Id": "EnableRaceSurvival",
+      "Type": "SWITCH",
+      "BoolVal": true
+    }
+  ],
+  "Governance26": [
+    {
+      "Id": "RegionalObediencePercent",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 99,
+      "IntVal": 45
+    },
+    {
+      "Id": "RegionalLowYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 1,
+      "MaxIntVal": 20,
+      "IntVal": 3
+    },
+    {
+      "Id": "RegionalRetryYears",
+      "Type": "INT_SLIDER",
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "IntVal": 10
+    }
+  ]
+}

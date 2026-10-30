@@ -1,0 +1,11 @@
+<Project>
+  <!--
+    net48-проекты берут reference assemblies из NuGet-пакета
+    Microsoft.NETFramework.ReferenceAssemblies.net48. Путь задаём через $(NuGetPackageRoot),
+    а не абсолютным /home/..., чтобы проект собирался на любой машине и при любом
+    расположении кэша пакетов.
+  -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net48'">
+    <FrameworkPathOverride>$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net48/1.0.3/build/.NETFramework/v4.8</FrameworkPathOverride>
+  </PropertyGroup>
+</Project>
