@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RealPolitic</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Игровой слой (интеграция с WorldBox) -->
+    <Compile Include="*.cs" />
+    <!-- Независимое ядро симуляции компилируется в ту же сборку, чтобы мод оставался одним DLL -->
+    <Compile Include="../RealPolitic.Core/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ссылки на сборки WorldBox / NeoModLoader.
+         Пути настраиваются под локальную установку игры (см. README).
+         Для локальной сборки разместите DLL рядом или задайте HintPath. -->
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="0Harmony" />
+    <Reference Include="NeoModLoader" />
+    <Reference Include="UnityEngine.CoreModule" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Тот же встроенный набор, что и в релизной сборке: все идеологии и кнопки. -->
+    <EmbeddedResource Include="../../icons/64/*.png">
+      <LogicalName>RealPolitic.icons.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup><EmbeddedResource Include="../../Locales/ru.json" LogicalName="RealPolitic.fallback.ru.json" /></ItemGroup>
+</Project>
