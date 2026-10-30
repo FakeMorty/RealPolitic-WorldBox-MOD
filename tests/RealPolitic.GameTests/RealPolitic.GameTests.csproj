@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Тесты игрового слоя (рефлексия над API WorldBox) на стабах из tools/build-stubs.
+    Чистое ядро тестируется отдельно в RealPolitic.Tests.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <NoWarn>$(NoWarn);CS8632</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <IsTestProject>true</IsTestProject>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <XunitTestAdapterDll>$(NuGetPackageRoot)xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.visualstudio.testadapter.dll</XunitTestAdapterDll>
+  </PropertyGroup>
+  <Target Name="CopyTestHostRuntimeConfig" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).runtimeconfig.json" DestinationFiles="$(OutputPath)testhost.runtimeconfig.json" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(XunitTestAdapterDll)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" Condition="Exists('$(XunitTestAdapterDll)')" />
+  </Target>
+
+  <ItemGroup>
+    <Compile Include="../../src/Game/*.cs" />
+    <Compile Include="../../src/RealPolitic.Core/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../tools/build-stubs/AssemblyCSharp/AssemblyCSharp.csproj" />
+    <ProjectReference Include="../../tools/build-stubs/Harmony/Harmony.csproj" />
+    <ProjectReference Include="../../tools/build-stubs/NeoModLoader/NeoModLoader.csproj" />
+    <ProjectReference Include="../../tools/build-stubs/UnityEngine/UnityEngine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup><EmbeddedResource Include="../../Locales/ru.json" LogicalName="RealPolitic.fallback.ru.json" /></ItemGroup>
+  <ItemGroup><Compile Include="../../tools/native-probe/NativeProbePolicy.cs" Link="NativeProbePolicy.cs" /></ItemGroup>
+</Project>
